@@ -1,0 +1,270 @@
+body {
+    background-color: #202020;
+    margin: 0;
+    width: 100%;
+    color: #CFCECE;
+    font-size: 1.3vw;
+    font-family: sans-serif Arial, Helvetica, sans-serif;
+}
+header {
+    background-color: #25282C;
+    position: fixed;
+    width: 100%;
+    height: 10%;
+    z-index: 10000;
+    font-family: inherit;
+    border-bottom: 3px solid #EF6263;
+}
+.header {
+    position: fixed;
+    width: 100%;
+    height: 10%;
+}
+.logo {
+    font-size: 4vw;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    vertical-align: middle;
+    position: relative;
+    top: 3%;
+    bottom: 5%;
+    margin: 20% 20px 0px 20px ;
+    padding: 0px;
+    display: inline;
+    cursor: default;
+}
+.transition {
+    transition: 1s;
+}
+.underline_cursor:hover {
+    border-bottom: 2px solid #C7383A;
+}
+.logo a {
+    display: inline;
+    /* height: 100%; */
+    text-decoration: none;
+    color: #eb7e7f;
+    font-family: "Mistral" cursive;
+    /* transition: 1s; */
+    cursor: default;
+ }
+.logo:hover > a {
+    color: #C7383A;
+    /* transition: 1s; */
+}
+.menu {
+    float: right;
+    margin: 0;
+    top: 40%;
+    bottom: 40%;
+    right: 10%;
+    padding: 0;
+    position: relative;
+    display: block;
+}
+/* .menu-item {
+    margin: 10%;
+    position: relative;
+    display: block;
+    font-size: 110%;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+} */
+.menu a {
+    display: inline;
+    margin: 10px;
+    font-size: 1.3vw;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: inherit;
+    color: #eb7e7f;   
+    padding: 0px 5px 0 5px;
+    cursor: default;    
+} 
+.menu a.active {
+    color: #DBDBDB;
+    background-color: #C44B4D;
+    border-radius: 3px;
+
+}
+.menu a:hover {
+    color: #DBDBDB;
+    background-color: #C44B4D;
+    border-radius: 3px;   
+}
+.unseen {
+    display: none;
+}
+.dmitry p:hover > span.unseen {
+    display: block;
+    color: #DBDBDB;
+}
+.dmitry p:hover {
+    color: #B3B2B2
+}
+.home {
+    position: absolute;
+    background-color: #282b30;
+    width: 100%;
+    height: 100%;
+    font-family: inherit;
+    /* top: 10%; */
+}
+.dmitry {
+    position: relative;
+    width: 90%;
+    margin: auto;
+    top: 40%;
+    text-align: center;
+}
+.dmitry h1 {
+    font-size: 6vw;
+    cursor: default;
+    margin: auto auto 30px auto;
+    transition: 0.5s;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.dmitry h1:hover {
+    color: #C44B4D;
+}
+.dmitry p {
+    font-size: 1.5vw;
+    cursor: default;
+}
+.about-me {
+    position: absolute;
+    top: 100%;
+    background-color: #1C1E22;
+    width: 100%;
+    height: 200%;
+    padding: 0 0 0% 0;
+}
+.about-me-left {
+    position: absolute;
+    padding-top: 15%;
+    width: 35%;
+    height: auto;
+    margin: 1% 0 0 5%;
+    /* display: block; */
+}
+.about-me img {
+    /* top: 23%; */
+    left: 45%;
+    position: absolute;
+    height: 10%;
+    width: 10%;
+    border-radius: 50%;
+    border: 3px solid #C44B4D;
+}
+.img_height_resize {
+    /* костыль для изображения */
+    font-family: inherit;
+    margin-top: 23%
+}
+.about-me img:hover {
+    border: 3px solid #CF2628;
+
+}
+.about-me-right {
+    position: absolute;
+    padding-top: 15%;
+    width: 35%;
+    height: auto;
+    margin: 1% 5% 0 60%;
+}
+.about-me h3 {
+    text-align: center;
+    font-size: 1.4vw;
+}
+.about-me-skills {
+    position: absolute;
+    top: 55%;
+    width: 100%;
+    height: 45%;
+    padding: 0;
+}
+.about-me-skills h3 {
+    font-size: 1.5vw;
+    text-align: center;
+}
+.select_skills {
+    position: absolute;
+    display: inline;
+    top: 5%;
+    margin-left: 10%;
+    
+    background-color: #282b30;
+    padding: 2% 4% 2% 1%;
+}
+.select_skills li {
+    list-style-type: none;
+    line-height: 300%;
+    border-bottom: 2px solid #C7383A;
+    cursor: default;
+}
+.select_skills li:first-child {
+    border-top: 2px solid #C7383A;
+}
+.select_skills li:hover {
+    color: #DBDBDB;
+    background-color: #40444B;
+}
+.li_click {
+    /* ебаный костыль */
+    font-family: inherit;
+}
+.li_info {
+    float: right;
+    position: relative;
+    width: 30%;
+    height: 40%;
+    margin: 2%;
+    top: 5%;
+}
+.li_html_info {
+    /* display: none; */
+
+}
+div.select_skills li.active {
+    color: #DBDBDB;
+    background-color: #40444B;
+}
+.services {
+    position: absolute;
+    top: 300%;
+    background-color: #282b30;
+    width: 100%;
+    height: 100%;
+}
+.block {
+    /* костыль */
+    font-family: inherit;
+    /* чтобы блок не был пустым */
+}
+.portfolio {
+    position: absolute;
+    top: 400%;
+    background-color: #1C1E22;
+    width: 100%;
+    height: 100%;
+}
+.contacts {
+    position: absolute;
+    top:500%;
+    background-color: #282b30;
+    width: 100%;
+    height: 100%;
+}
+footer {
+    background-color: #303030;
+    text-align: center;
+    vertical-align: middle;
+    top: 600%;
+    width: 100%;
+    height: 10%;
+    position: relative;
+    border-top: 3px solid #eb7e7f;
+}
+footer p {
+    margin-top: 2%;
+}
