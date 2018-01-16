@@ -1,24 +1,57 @@
 body {
-    background-color: #202020;
+    background-color: #F5F4F7;
     margin: 0;
     width: 100%;
-    color: #CFCECE;
+    color: #7C777C;
     font-size: 1.3vw;
-    font-family: sans-serif Arial, Helvetica, sans-serif;
+    font-family:Arial, Helvetica, sans-serif;
+}
+::selection {
+    background: #00a6ff;
+}
+.lp_info {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.4);
+    text-align: center;
+    vertical-align: middle;
+    position: fixed;
+    z-index: 4444444444;
+}
+.lp_info1 {
+    font-size: 100%;
+    opacity: 0.9;
+    margin: 15% 35% 35% 25%;
+    width: 30%;
+    height: 15%;
+    padding: 5% 10% 10% 10%;
+    background-color: #202020;
+    border-radius: 10px;
+}
+.siteviz_info {
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    opacity: 0.3;
+    text-align: center;
+    vertical-align: middle;
+    position: fixed;
+    z-index: 4444444444;
 }
 header {
-    background-color: #25282C;
+    background-color: #DDDBE1;
     position: fixed;
+    cursor: default;
     width: 100%;
-    height: 10%;
+    height: 10.5%;
     z-index: 10000;
     font-family: inherit;
-    border-bottom: 3px solid #EF6263;
+    border-bottom: 3px solid #3B7EED;
 }
 .header {
     position: fixed;
     width: 100%;
-    height: 10%;
+    height: 10.5%;
 }
 .logo {
     font-size: 4vw;
@@ -34,7 +67,8 @@ header {
     cursor: default;
 }
 .transition {
-    transition: 1s;
+    transition: 0.5s;
+    /* хуй */
 }
 .underline_cursor:hover {
     border-bottom: 2px solid #C7383A;
@@ -43,13 +77,16 @@ header {
     display: inline;
     /* height: 100%; */
     text-decoration: none;
-    color: #eb7e7f;
-    font-family: "Mistral" cursive;
+    color: #7C777C;
+    font-family: inherit;
     /* transition: 1s; */
     cursor: default;
+    white-space: pre;
  }
 .logo:hover > a {
-    color: #C7383A;
+    color: rgb(208, 208, 208);
+    /* background-color: #eb7e7f; */
+    border-radius: 10px;    
     /* transition: 1s; */
 }
 .menu {
@@ -62,35 +99,34 @@ header {
     position: relative;
     display: block;
 }
-/* .menu-item {
-    margin: 10%;
-    position: relative;
-    display: block;
-    font-size: 110%;
-    font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
-} */
 .menu a {
     display: inline;
-    margin: 10px;
+    margin: 10px 15px;
     font-size: 1.3vw;
     font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
-    text-decoration: inherit;
-    color: #eb7e7f;   
+    text-decoration: none;
+    color:#7C777C;  
     padding: 0px 5px 0 5px;
     cursor: default;    
-} 
+    transition: 0.3s ease-out;
+}
 .menu a.active {
-    color: #DBDBDB;
-    background-color: #C44B4D;
+    color: #fff;
+    background-color:#3B7EED;
     border-radius: 3px;
-
+    /* text-decoration: underline; */
+    
+}
+.menu a.active:hover {
+    color: #3B7EED;
+    /* background-color:#3B7EED; */
+    border-radius: 3px;
 }
 .menu a:hover {
-    color: #DBDBDB;
-    background-color: #C44B4D;
-    border-radius: 3px;   
+    color: #3B7EED;
+    /* background-color:#3B7EED; */
+    border-radius: 3px;
 }
 .unseen {
     display: none;
@@ -99,12 +135,10 @@ header {
     display: block;
     color: #DBDBDB;
 }
-.dmitry p:hover {
-    color: #B3B2B2
-}
+
 .home {
     position: absolute;
-    background-color: #282b30;
+    background-color: #ffffff;
     width: 100%;
     height: 100%;
     font-family: inherit;
@@ -125,36 +159,41 @@ header {
     font-family: Arial, Helvetica, sans-serif;
 }
 .dmitry h1:hover {
-    color: #C44B4D;
+    color: #3B7EED;
 }
 .dmitry p {
     font-size: 1.5vw;
     cursor: default;
 }
 .about-me {
-    position: absolute;
+   position: absolute;
     top: 100%;
-    background-color: #1C1E22;
+    background-color: rgb(237, 243, 255);
     width: 100%;
     height: 200%;
     padding: 0 0 0% 0;
 }
 .about-me-left {
+    left: 0%;
+    /* transition: 1s; */
     position: absolute;
     padding-top: 15%;
     width: 35%;
     height: auto;
     margin: 1% 0 0 5%;
+    font-family: Arial, Helvetica, sans-serif;
     /* display: block; */
+    /* opacity: 0.1; */
 }
 .about-me img {
     /* top: 23%; */
+   
+    /* height: 10%; */
     left: 45%;
-    position: absolute;
-    height: 10%;
+    position: absolute; 
     width: 10%;
     border-radius: 50%;
-    border: 3px solid #C44B4D;
+    border: 3px solid rgb(0, 187, 255);
 }
 .img_height_resize {
     /* костыль для изображения */
@@ -170,7 +209,9 @@ header {
     padding-top: 15%;
     width: 35%;
     height: auto;
-    margin: 1% 5% 0 60%;
+    margin: 1% 5% 0 10%;
+    /* transition: 1s; */
+    left: 50%;
 }
 .about-me h3 {
     text-align: center;
@@ -187,83 +228,346 @@ header {
     font-size: 1.5vw;
     text-align: center;
 }
-.select_skills {
-    position: absolute;
-    display: inline;
-    top: 5%;
-    margin-left: 10%;
-    
-    background-color: #282b30;
-    padding: 2% 4% 2% 1%;
+.skills_menu {
+    width: 90%;
+    height: 10%;
+    margin: 0 5%;
+    border-color: #CF2628;
+    font-size: 1.4vw;
 }
-.select_skills li {
-    list-style-type: none;
-    line-height: 300%;
-    border-bottom: 2px solid #C7383A;
-    cursor: default;
+.skills_menu_item {
+    float: left;
+    width: 24%;
+    margin: 0 4%;
+    height: 100%;
+    border: 2px solid #C44B4D;
 }
-.select_skills li:first-child {
-    border-top: 2px solid #C7383A;
+.skills_menu_item p {
+    text-align:center; 
+    vertical-align:middle;
+    padding-top: 0;
 }
-.select_skills li:hover {
-    color: #DBDBDB;
-    background-color: #40444B;
+.skills_menu_info {
+    background-color: inherit;
+    width: 90%;
+    height: 30%;
+    margin: 5% 5%;
+    /* border-color: #CF2628; */
+    transition: bottom 1s linear;
+    font-size: 1.4vw;
 }
-.li_click {
-    /* ебаный костыль */
-    font-family: inherit;
-}
-.li_info {
-    float: right;
-    position: relative;
-    width: 30%;
-    height: 40%;
-    margin: 2%;
-    top: 5%;
-}
-.li_html_info {
-    /* display: none; */
-
-}
-div.select_skills li.active {
-    color: #DBDBDB;
-    background-color: #40444B;
+.skills_menu_item2 {
+    float: left;
+    /* padding-top: 1%; */
+    width: 24%;
+    margin: 0 4%;
+    height: 100%;
 }
 .services {
     position: absolute;
     top: 300%;
     background-color: #282b30;
     width: 100%;
+    height: 110%;
+}
+.services_logo {
+    display: inline;
+}
+.services_logo h2 {
+    font-size: 3vw;
+}
+.services_menu {
+    /* padding-top: 6%;      */
+    height: 80%;
+    width: 80%;
+    margin: 8% 10%;
+    cursor: default;
+}
+hr {
+    background: #C7383A;
+    color: #C7383A;
+    margin: 0;
+    height: 3px;
+    border: none;
+}
+.services_menu ul {
+    list-style-type: none;
+    font-size: 2vw;
+    /* margin-left: 10%; */
+}
+.services_menu ul > li {
+    height: 9%;
+    margin: 0;
+    padding: 2% 1% 0 5%;
+    vertical-align: middle;
+    transition: 0.3s;
+}
+.services_menu ul > li:hover {
+    margin: 0;
+    padding: 2% 1% 0 5%;
+    margin-left: 0.6%;
+    margin-right: -0.6%;
+    color: #E1E0E0;
+    /* transition: 1s; */
+}
+.services_menu_li_left {
+    display: inline;
+}
+.services_menu_li_left a {
+    text-decoration: none;
+    color: inherit;
+}
+.services_menu_li_right {
+    float: right;
+    width: 16%;
+    /* text-shadow: 1px 1px 5px #CFCECE, -1px -1px 5px #CFCECE;
+
+    -webkit-transition: all .5s ease-out;
+    -moz-transition: all .5s ease-out;
+    -o-transition: all .5s ease-out;
+    -ms-transition: all .5s ease-out;
+    transition: all .5s ease-out; */
+}
+.services_menu_li_right:hover {
+    text-shadow: none;
+}
+.service_about {
+    margin: 0;
+    border-radius: 50%;
+    color: #282b30;
+    background-color: #4D5055;
+    width: 100%;  
+    text-align: center;
+    font-weight: bolder;
+    position: relative;
+    white-space: pre;
+}
+.service_about:hover {
+    background-color: #C44B4D;
+    color: #B3B2B2;
+}
+.service_about_lp {
+    position: fixed;
+    background-color: #fff;
+    opacity: 0.3;
+    width: 100%;
     height: 100%;
+    z-index: 9999999;
+}
+.act {
+    background-color: #C44B4D;
+    color: #B3B2B2;
 }
 .block {
     /* костыль */
     font-family: inherit;
     /* чтобы блок не был пустым */
 }
+/* ######################## */
+/* portfolio */
+/* ######################## */
 .portfolio {
     position: absolute;
-    top: 400%;
+    top: 410%;
     background-color: #1C1E22;
     width: 100%;
     height: 100%;
 }
+.port_scroll {
+    float: left;
+    position: relative;
+    font-size: 6vw;
+    padding-top: 23%;
+    vertical-align: middle;
+    font-stretch: ultra-condensed;
+    text-align: center;
+    cursor: default;
+    width: 7%;
+    height: 100%;
+}
+.port_scroll:hover {
+    background-color: rgb(43, 46, 51);
+    color: #CF2628;
+}
+.port_content {
+    width: 71%;
+    height: 70%;
+    float: left;
+    background-color: #fff;
+    color: #000;
+    margin: 10% 7%;
+    text-align: center;
+    vertical-align: middle;
+}
+.slider-box{
+  position:relative;
+  top: 20%;
+  margin: 0 10%;
+  width:80%;
+  height:70%;
+  overflow:hidden;
+}
+.slider{
+  position:relative;
+  margin: 0 5%;
+  width:90%;
+  height:100%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 10), rgba(0, 0, 0, 10));
+
+  transition: all .5s ease-in-out;
+}
+
+.slider img{
+    width: 100%;
+    height:100%;
+    transition: all .5s ease-in-out;
+    float:left;
+}
+.slider:hover img{
+    opacity: 0.1;
+}
+.slider:hover{
+    background-color: #000;
+    background: linear-gradient(to bottom, #000, #1d1d1d)
+}
+
+.project_info  {
+    position: absolute;
+    font-size: 3vw;
+    padding-top: 10%;
+    z-index: 100;
+    height: 100%;
+    width: 100%;
+    /* margin: 10% 20%; */
+    text-align: center;
+    vertical-align: middle;
+    color: #fff;
+}
+.project_info a {
+    text-decoration: none;
+    border: 2px solid #CF2628;
+    padding: 1% 3%;
+    color: #CF2628
+}
+.project_info a:hover {
+    text-decoration: none; 
+    color: #202020;
+    background-color: #CF2628;
+    /* border-radius: 5px; */
+}
+.slider-box .prev, .slider-box .next{
+  position:absolute;
+  top:50%;
+  display:block;
+  width:30px;
+  height:30px;
+  cursor:pointer;
+}
+.slider-box .prev{
+  left:10px;
+  background:url(http://www.coderpro.ru/images/images/slider_controls.png) no-repeat 0 0;
+}
+.slider-box .prev:hover {
+    opacity: 0.7;
+}
+.slider-box .next{
+  right:10px;
+  display: inline;
+  background:url(http://www.coderpro.ru/images/images/slider_controls.png) no-repeat -30px 0;
+}
+.slider-box .next:hover {
+    opacity: 0.7;
+}
+/* ######################### */
+/* контакты */
+/* ######################### */
 .contacts {
     position: absolute;
-    top:500%;
+    top:510%;
     background-color: #282b30;
+    /* background: linear-gradient(to bottom left ,#525252,#1c1e22); */
     width: 100%;
     height: 100%;
 }
+.email {
+    position: relative;
+    left: 30%;
+    top: 20%;
+    width: 40%;
+    height: 50%;
+    margin: 0;
+    background-color: #1C1E22;
+    border-radius: 3px;
+    padding-top: 1%;
+}
+.form_email {
+    border: 2px solid #4D5055;
+    background-color: #DBDBDB;
+    position: relative;
+    width: 80%;
+    height: 15%;
+    margin: 0% 10%;
+}
+form.email p.p {
+    color: #CF2628;
+    font-size: 0.9vw;
+    padding: 0 10%
+}
+div.form_email input {
+    width: 100%;
+    height: 100%;
+    font-size: 2vw;
+    padding: 0 10%;
+    border: 2px solid #B3B2B2;
+}
+.button {
+    position: absolute;
+    width: 30%;
+    height: 10%;
+    margin: auto 35% 5% 35%;
+    bottom: 5%;
+    font-weight: bold;
+    font-size: 1.7vw;
+    padding-top: 2%;
+    padding-bottom: 1%;
+    vertical-align: middle;
+    text-align: center;
+    background-color: #C7383A;
+    user-select: none;
+
+}
+.button:hover {
+    background-color: #C44B4D;
+    color: #fff;
+    cursor: pointer;
+}
+.button:active {
+    background-color: rgb(163, 53, 55);
+    color: #B3B2B2;
+
+}
+.sotial {
+    position: relative;
+    bottom: -25%;
+
+    width: 40%;
+    height: 10%;
+    left: 30%; 
+    text-align: center;
+    vertical-align: middle;
+}
+.sotial_icon {
+    height: 90%;
+}
 footer {
-    background-color: #303030;
+    background-color: #25282C;
     text-align: center;
     vertical-align: middle;
     top: 600%;
     width: 100%;
     height: 10%;
     position: relative;
-    border-top: 3px solid #eb7e7f;
+    border-top: 3px solid rgb(237, 59, 62);;
 }
 footer p {
     margin-top: 2%;
