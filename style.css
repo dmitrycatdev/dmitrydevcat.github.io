@@ -1,13 +1,13 @@
 body {
-    background-color: #F5F4F7;
+    background-color: #202020;
     margin: 0;
     width: 100%;
-    color: #7C777C;
+    color: #CFCECE;
     font-size: 1.3vw;
     font-family:Arial, Helvetica, sans-serif;
 }
 ::selection {
-    background: #00a6ff;
+    background: #ffb7b7;
 }
 .lp_info {
     width: 100%;
@@ -39,14 +39,14 @@ body {
     z-index: 4444444444;
 }
 header {
-    background-color: #DDDBE1;
+    background-color: #1B1818;
     position: fixed;
     cursor: default;
     width: 100%;
     height: 10.5%;
     z-index: 10000;
     font-family: inherit;
-    border-bottom: 3px solid #3B7EED;
+    border-bottom: 3px solid rgb(237, 59, 62);
 }
 .header {
     position: fixed;
@@ -77,14 +77,22 @@ header {
     display: inline;
     /* height: 100%; */
     text-decoration: none;
-    color: #7C777C;
+    color: #CFCECE;
+    font-weight: bold;
     font-family: inherit;
     /* transition: 1s; */
     cursor: default;
     white-space: pre;
  }
+ .logo a > span {
+     background-color: #eb7e7f;
+     border-radius: 10px;
+     color: #25282C;
+     /* transition: 1s;  */
+     
+ }
 .logo:hover > a {
-    color: rgb(208, 208, 208);
+    color: rgb(225, 225, 225);
     /* background-color: #eb7e7f; */
     border-radius: 10px;    
     /* transition: 1s; */
@@ -105,28 +113,25 @@ header {
     font-size: 1.3vw;
     font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
-    text-decoration: none;
-    color:#7C777C;  
+    text-decoration: inherit;
+    color: #CFCECE;   
     padding: 0px 5px 0 5px;
     cursor: default;    
-    transition: 0.3s ease-out;
-}
+} 
 .menu a.active {
-    color: #fff;
-    background-color:#3B7EED;
+    color: #C44B4D;
+    /* background-color: #C44B4D; */
     border-radius: 3px;
-    /* text-decoration: underline; */
-    
+
 }
-.menu a.active:hover {
-    color: #3B7EED;
-    /* background-color:#3B7EED; */
+.menu a.active:hover {    
+    color: #C44B4D;
     border-radius: 3px;
+
 }
 .menu a:hover {
-    color: #3B7EED;
-    /* background-color:#3B7EED; */
-    border-radius: 3px;
+    color: rgb(192, 92, 94);
+    border-radius: 3px;   
 }
 .unseen {
     display: none;
@@ -138,7 +143,7 @@ header {
 
 .home {
     position: absolute;
-    background-color: #ffffff;
+    background-color: #333333;
     width: 100%;
     height: 100%;
     font-family: inherit;
@@ -159,7 +164,7 @@ header {
     font-family: Arial, Helvetica, sans-serif;
 }
 .dmitry h1:hover {
-    color: #3B7EED;
+    color: #C44B4D;
 }
 .dmitry p {
     font-size: 1.5vw;
@@ -168,7 +173,8 @@ header {
 .about-me {
    position: absolute;
     top: 100%;
-    background-color: rgb(237, 243, 255);
+    background-color: #F3F3F3;
+    color: #000;
     width: 100%;
     height: 200%;
     padding: 0 0 0% 0;
@@ -193,7 +199,7 @@ header {
     position: absolute; 
     width: 10%;
     border-radius: 50%;
-    border: 3px solid rgb(0, 187, 255);
+    border: 3px solid #C44B4D;
 }
 .img_height_resize {
     /* костыль для изображения */
@@ -305,9 +311,9 @@ hr {
 .services_menu ul > li:hover {
     margin: 0;
     padding: 2% 1% 0 5%;
-    margin-left: 0.6%;
-    margin-right: -0.6%;
-    color: #E1E0E0;
+    /* margin-left: 0.6%; */
+    /* margin-right: -0.6%; */
+    color: rgb(255, 255, 255);
     /* transition: 1s; */
 }
 .services_menu_li_left {
