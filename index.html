@@ -1,293 +1,114 @@
-<html>
-    <head>
-        <title>DmitryWebDev</title>
-        <link href="style.css" rel=stylesheet>
-        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-        <script type="text/javascript" src="scripts.js"></script>        
+<!DOCTYPE html>
+<html lang="en">
 
-    </head>
-    <body>
-        <div class="lp_info unseen" id="lp">
-            <div class="lp_info1">
-                   <p>Landing Page - это современный одностраничный сайт,
-                     главная цель которого - показать компанию, 
-                     показать её услугу или конкретный товар и 
-                     подтолкнуть покупателя оставить свои контактные 
-                     данные для оформления заявки, 
-                     либо для скачивания продукта. <p>
-            </div>
-        </div>
-        <div class="lp_info unseen " id="siteviz">
-            <div class="lp_info1">
-                <p>Сайт-визитка имеет стандартный набор элементов 
-                    вроде формы обратной связи, 
-                    страницы с описанием услуг и страницы о компании. <p>
-            </div>
-        </div>
-        <div class="lp_info unseen " id="int_shop">
-                <div class="lp_info1">
-                    <p>В отличии от сайта-визитки имеет корзину 
-                        товаров и форму оформления заказа, 
-                        а так же более глубокую настройку товаров 
-                        и плацдарм для будущего роста. <p>
-                </div>
-        </div>
-        <div class="lp_info unseen " id="verstka">
-                <div class="lp_info1">
-                    <p>Вёрстка страниц по Вашему дизайну. 
-                        Цена указана за одну страницу (без учёта адаптивной вёрстки). <p>
-                </div>
-        </div>
-        <div class="lp_info unseen " id="application">
-                <div class="lp_info1">
-                    <p>None<p>
-                </div>
-        </div>
-        <div class="lp_info unseen " id="ispr">
-                <div class="lp_info1">
-                    <p>None<p>
-                </div>
-        </div>
-        <div class="lp_info unseen " id="seo">
-                <div class="lp_info1">
-                    <p>None<p>
-                </div>
-        </div>
-        <header>
-            <div class="header scroll">
-                <div class="logo">
-                    <a href="#anchor1" class="transition">DmitryWebDev </a>
-                </div>
-             </div> <!--лого или название 7K7eWjH@%Tkik3^d3qsZ -->
-            <div class="menu scroll">
-                    <a href="#about_me_top" class="transition">Обо мне</a>
-                    <a href="#services_top" class="transition">Услуги</a>
-                    <a href="#portfolio_top" class="transition">Портфолио</a>
-                    <a href="#contacts_top" class="transition">Контакты</a>
-            </div>
-        </header>
-        <div  id="anchor1" class="home block">
-            <div class="dmitry">
-                
-                <h1>Дмитрий Воробьев</h1>
-                <p>
-                    Веб разработка, SEO-продвижение, Реклама,<br>
-                    Мобильные/Десктопные приложения
-                </p>
-            </div>
-        </div>
-        <div id="about_me_top" class="about-me block">
-            <div class="about-me-left" id="left">
-                <p>
-                    <h3 >ОБО МНЕ</h3>
-                    Доброго времени суток, меня зовут Дмитрий.
-                     Занимаюсь разработкой сайтов с нуля, под ключ. 
-                     Выполняю верстку и программирование сайтов. 
-                     Добавляю весь необходимый функционал на сайт. 
-                     Делаю адаптивную верстку на Bootstrap, 
-                     таким образом Ваш сайт будет отлично выглядеть на всех устройствах.
-                     Также занимаюсь разработкой мобильных
-                     и десктопных приложений. 
-                     Любой начатый проект довожу до конца, 
-                     постоянно совершенствую свой профессиональный уровень. 
-                     Вы можете заказать у меня разработку сайта с нуля 
-                     или связаться со мной для сотрудничества.
-                </p>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SawdustLanding</title>
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" value="Webpack basic starter project">
+    <meta name="Description" content="A simple webpack starter project for your basic web development needs." />
+    <!-- Open Graph data -->
+    <meta property="og:title" content="Webpack basic starter project" />
+    <meta property="og:type" content="article" />
+    <meta property="og: " content="https://lifenautjoe.github.io/webpack-starter-basic/" />
+    <meta property="og:image" content="https://i.snag.gy/i3eMBc.jpg" />
+    <meta property="og:description" content="A simple webpack starter project for your basic web development needs." />
+    <!-- Mobile header color for Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#ff4970">
+    <!-- Mobile header color Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#ff4970">
+    <!-- Mobile header color for iOS Safari (supports black, black-translucent or default) -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.0.min.js"></script>
 
-            </div>
-            
-           <img src="https://image.ibb.co/g81D7R/iam.jpg" title="Eto ya" class="transition img_height_resize log" >
-            
-            <div class="about-me-right" id="right">
-                <p>
-                    <h3>ДМИТРИЙ ВОРОБЬЕВ</h3>    
-                     <span class="underline_cursor">Профессиональное создание сайтов:</span> разработка дизайна,
-                    HTML верстка, посадка на CMS WordPress,
-                    программирование на PHP, Python, JavaScript.<br>
-                    <span class="underline_cursor">Мобильные приложения:</span> Java/Kotlin, Objective-C/Swift.<br>
-                    <span class="underline_cursor">Десктопные приложения:</span> C#, C++/Qt.<br>
-                    День рождения: 31 февраля 1997 года<br>
-                    Skype: none<br>
-                    E-mail: none<br>
-                    Веб-сайт: this
-                </p>
-            </div>
-            <div class="about-me-skills" id="hui_skills">
-                <div class="skills_menu">
-                    <div class="skills_menu_item">
-                        <p>Веб-разработка</p>
-                    </div>
-                    <div class="skills_menu_item">
-                        <p>Десктопные приложения</p>
-                    </div>
-                    <div class="skills_menu_item">
-                        <p>Мобильные приложения</p>
-                    </div>
-                </div>
-                <div class="skills_menu_info" id="skills_menu_info">
-                    <div class="skills_menu_item2">
-                        <p style="text-align:center; vertical-align:middle;">
-                            none
-                        </p>
-                    </div>
-                    <div class="skills_menu_item2">
-                        <p style="text-align:center; vertical-align:middle;">
-                            none
-                        </p>
-                    </div>
-                    <div class="skills_menu_item2">
-                        <p style="text-align:center; vertical-align:middle;">
-                           none
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
+<link rel="apple-touch-icon" sizes="57x57" href="icons-5b1f36bc41ab31f5b801d48ba1d65781/apple-touch-icon-57x57.png"><link rel="apple-touch-icon" sizes="60x60" href="icons-5b1f36bc41ab31f5b801d48ba1d65781/apple-touch-icon-60x60.png"><link rel="apple-touch-icon" sizes="72x72" href="icons-5b1f36bc41ab31f5b801d48ba1d65781/apple-touch-icon-72x72.png"><link rel="apple-touch-icon" sizes="76x76" href="icons-5b1f36bc41ab31f5b801d48ba1d65781/apple-touch-icon-76x76.png"><link rel="apple-touch-icon" sizes="114x114" href="icons-5b1f36bc41ab31f5b801d48ba1d65781/apple-touch-icon-114x114.png"><link rel="apple-touch-icon" sizes="120x120" href="icons-5b1f36bc41ab31f5b801d48ba1d65781/apple-touch-icon-120x120.png"><link rel="apple-touch-icon" sizes="144x144" href="icons-5b1f36bc41ab31f5b801d48ba1d65781/apple-touch-icon-144x144.png"><link rel="apple-touch-icon" sizes="152x152" href="icons-5b1f36bc41ab31f5b801d48ba1d65781/apple-touch-icon-152x152.png"><link rel="apple-touch-icon" sizes="180x180" href="icons-5b1f36bc41ab31f5b801d48ba1d65781/apple-touch-icon-180x180.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-title" content="SawdustLanding"><meta name="mobile-web-app-capable" content="yes"><meta name="theme-color" content="#fff"><meta name="application-name" content="SawdustLanding"><link rel="icon" type="image/png" sizes="32x32" href="icons-5b1f36bc41ab31f5b801d48ba1d65781/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="icons-5b1f36bc41ab31f5b801d48ba1d65781/favicon-16x16.png"><link rel="shortcut icon" href="icons-5b1f36bc41ab31f5b801d48ba1d65781/favicon.ico"><link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 1)" href="icons-5b1f36bc41ab31f5b801d48ba1d65781/apple-touch-startup-image-320x460.png"><link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)" href="icons-5b1f36bc41ab31f5b801d48ba1d65781/apple-touch-startup-image-640x920.png"><link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" href="icons-5b1f36bc41ab31f5b801d48ba1d65781/apple-touch-startup-image-640x1096.png"><link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)" href="icons-5b1f36bc41ab31f5b801d48ba1d65781/apple-touch-startup-image-750x1294.png"><link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3)" href="icons-5b1f36bc41ab31f5b801d48ba1d65781/apple-touch-startup-image-1182x2208.png"><link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3)" href="icons-5b1f36bc41ab31f5b801d48ba1d65781/apple-touch-startup-image-1242x2148.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 1)" href="icons-5b1f36bc41ab31f5b801d48ba1d65781/apple-touch-startup-image-748x1024.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 1)" href="icons-5b1f36bc41ab31f5b801d48ba1d65781/apple-touch-startup-image-768x1004.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2)" href="icons-5b1f36bc41ab31f5b801d48ba1d65781/apple-touch-startup-image-1496x2048.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2)" href="icons-5b1f36bc41ab31f5b801d48ba1d65781/apple-touch-startup-image-1536x2008.png"><link href="styles.d15fee0e383b351f87a2.css" rel="stylesheet"></head>
 
+<body>
         
-        <div id="services_top" class="services block"> 
-            <div class="services_menu"  id="hr">
-                <ul>
-                    <li>
-                        <div class="services_menu_li_left">
-                            <p style="display: inline;">
-                                Landing Page 
-                                
-                                <span class="service_about transition"><a href="#lp"> ? </a></span>
-                            </p>
-                        </div>
-                        <div class="services_menu_li_right">
-                            от 2000р.
-                        </div>
+    <!-- start navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top ">
+        <div class="container">
+            <a class="navbar-brand" href="#">Опилки</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav justify-content-around">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="#">Главная </a>
                     </li>
-                    <hr>
-                    <li>
-                        <div class="services_menu_li_left">
-                             Сайт-визитка 
-                             <span class="service_about transition"><a href="#siteviz"> ? </a></span>
-                        </div>
-                        <div class="services_menu_li_right">
-                            от 3000р.
-                        </div>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#purchase">Покупка</a>
                     </li>
-                    <hr>
-                    <li>
-                        <div class="services_menu_li_left">
-                             Интернет-магазин 
-                             <span class="service_about transition"><a href="#int_shop"> ? </a></span>
-                        </div>
-                        <div class="services_menu_li_right">
-                            от 10 000р. 
-                        </div>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Продажа</a>
                     </li>
-                    <hr>
-                    <li>
-                        <div class="services_menu_li_left">
-                             SEO 
-                             <span class="service_about transition"><a href="#seo"> ? </a></span>
-                        </div>
-                        <div class="services_menu_li_right transition">
-                            от 1500р.
-                        </div>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Аренда</a>
                     </li>
-                    <hr>
-                    <li>
-                        <div class="services_menu_li_left">
-                             Верстка макета 
-                             <span class="service_about transition"><a href="#verstka"> ? </a></span>
-                        </div>
-                        <div class="services_menu_li_right">
-                            от 1000р.
-                        </div>
-                    </li>
-                    <hr>
-                    <li>
-                        <div class="services_menu_li_left">
-                             Доработка/исправление 
-                             <span class="service_about transition"><a href="#ispr"> ? </a></span>
-                        </div>
-                        <div class="services_menu_li_right">
-                            от 500р.
-                        </div>
-                    </li>
-                    <hr>
-                    <li>
-                        <div class="services_menu_li_left">
-                             Десктопные/Мобильные приложения 
-                             <span class="service_about transition"><a href="#application"> ? </a></span>
-                        </div>
-                        <div class="services_menu_li_right">
-                            Договорная
-                        </div>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Контакты</a>
                     </li>
                 </ul>
-            </div>                
-        </div>
-        <div id="portfolio_top" class="portfolio block">
-            <div class="slider-box">
-                <div class="slider">  
-                    <div class="slide">
-                        <img src="https://image.ibb.co/m9Vegm/slide0.png"
-                            alt="" class="">
-                        <div class="project_info">
-                            <p style="display: none;">Сайт-визитка<br> Дмитрия Воробьева</p>
-                            <a href=""style="display: none;">Перейти</a>
-                        </div>
-                    </div>                        
-                    <div class="slide">
-                        <img src="https://image.ibb.co/hRV1u6/slide1.png"
-                            alt="" class="">
-                        <div class="project_info">
-                            <p style="display: none;">Рандом пикча</p>
-                            <a href="" style="display: none;">Перейти</a>
-                        </div>
-                    </div>   
-                    <div class="slide">
-                        <img src="https://image.ibb.co/gnynZ6/slide2.png"
-                            alt="" class="">
-                        <div class="project_info">
-                            <p style="display: none;">MyHomeWorkout <br>Блог о домашних тренировках</p>
-                            <a href="" style="display: none;">Перейти</a>
-                        </div> 
-                    </div>                              
-                </div>
-                <div class="prev"></div>
-                <div class="next"></div>
-            </div>            
-        </div>
-        <div id="contacts_top" class="contacts block">
-            <form class="email">
-                <p style="text-align: center; vertical-align: middle; font-size: 1.3vw;">
-                    Оставьте свой e-mail:
-                </p>
-                <div class="form_email">
-                    <input type="text">
-                </div>
-                <p class="p">*я сразу же свяжусь с вами</p>
-                <div class="button" id="button">Отправить</div>
-            </form>
-            <div class="sotial">
-               <a href="https://vk.com/hellraiser_cat" id="vk">
-                    <img  onmouseout="this.src='https://image.ibb.co/dp2s1m/vk.png'"
-                    onmouseover="this.src='https://image.ibb.co/eb6wSR/vk1.png'"
-                    src="https://image.ibb.co/dp2s1m/vk.png" class="sotial_icon" alt="vk">
-                </a>
-                <a href="https://t.me/dmitryv666" class="tg" >
-                     <img onmouseout="this.src='https://image.ibb.co/gWFC1m/telegram.png'"
-                         onmouseover="this.src='https://image.ibb.co/hfjSZ6/telegram1.png'"
-                         src="https://image.ibb.co/gWFC1m/telegram.png" class="sotial_icon" alt="t">
-                </a>
-                <a href="https://plus.google.com/u/0/115656336262116742250" id="g">
-                    <img  onmouseout="document.getElementById(g.png).src='https://image.ibb.co/jCR21m/g.png'"
-                        onmouseover="this.src='https://image.ibb.co/fKUEgm/g1.png'"
-                        src="https://image.ibb.co/jCR21m/g.png" class="sotial_icon" alt="g">
-                </a> 
             </div>
         </div>
-        <footer>
-             <div>
-                 <p>Dmitry Vorobiov 1997-2017</p>
-             </div>
-        </footer>
-    </body>
+    </nav>
+    <!-- end navbar -->
+    <section class="main-section">
+        <div class='description container'>
+            <h3 class="text-justify">О компании:</h3>
+            <p>
+                Уже более пятнадцати лет занимаемся перевозкой, покупкой и продажей <b>опилок</b>.
+            </p>
+            <p>
+                В настоящее время активно <b>покупаем</b>, <b>продаем</b>, <b>перевозим</b> и <b>сдаем вы аренду</b>
+                транспорт.
+            </p>
+            <button class='myButt mt-5'>
+                <p>Связаться с нами</p>
+            </button>
+        </div>
+    </section>
+
+
+    <section class="purchase" id="purchase">
+        <div class="container h-100 d-inline-block d-flex align-items-center justify-content-center">
+            <div class="d-flex justify-content-center">
+                <div>
+                    <h3>Покупка</h3>
+                    <p>
+                        Покупаем опилки и щепу. Рассматриваем все предложения.
+                    </p>
+                    <p>
+                        Для перевозки используется собственный транспорт.
+                    </p>
+                </div>
+            </div>
+            <!-- <div class="w-100">
+                <div class="row ">
+                    <div class="col-lg m-5">
+                        <div class="purchase-item">
+                            <p class="h3 pb-5">Покупаем</p>
+                            <p>
+                                Покупаем опилки стружку
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg">
+                        <div class="purchase-item m-5">
+                            <p class="h3">Транспорт</p>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+    </section>
+    <div class="scrolled" style="display: none"></div>
+
+<script type="text/javascript" src="main.dacd396c33efe319225a.js"></script></body>
+
 </html>
